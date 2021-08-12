@@ -1,0 +1,279 @@
+@import url(./common.css);
+
+.index_silder {
+  width: 100%;
+}
+
+/* 關於我們 */
+.index_about {
+  padding: 48px 0;
+}
+.index_about .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.index_about .title .cname {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.index_about .title .cname:after {
+  content: '';
+  display: block;
+  width: 166px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #128ac9;
+}
+.index_about .title .ename {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.index_about .desc {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.index_about .btn {
+  display: flex;
+  justify-content: center;
+}
+.index_about .btn a {
+  width: 252px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #bbbbbb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+.index_about .btn a:hover {
+  opacity: 0.8;
+}
+
+/* 平台 */
+.index_plat {
+  width: 100%;
+}
+.index_plat .bg_top {
+  display: block;
+  width: 100%;
+  line-height: 0.8;
+}
+.index_plat .con {
+  background: #f2f2f2 url(../images/index/bg.png);
+  background-size: cover;
+  padding: 36px 0 76px 0;
+}
+.index_plat .con .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.index_plat .con .title .cname {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.index_plat .con .title .cname:after {
+  content: '';
+  display: block;
+  width: 166px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #128ac9;
+}
+.index_plat .con .title .ename {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.index_plat .con .desc {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.index_plat .con .image {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.index_plat .con .btn {
+  display: flex;
+  justify-content: center;
+}
+.index_plat .con .btn a {
+  width: 252px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #bbbbbb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+.index_plat .con .btn a:hover {
+  opacity: 0.8;
+}
+
+/* 核心能量 */
+.index_core {
+  padding: 48px 0 96px 0;
+}
+.index_core .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.index_core .title .cname {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.index_core .title .cname:after {
+  content: '';
+  display: block;
+  width: 166px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #128ac9;
+}
+.index_core .title .ename {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.index_core .list {
+  display: block;
+}
+.index_core .list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.index_core .list .item:last-child {
+  margin-bottom: 0;
+}
+.index_core .list .item .img {
+  flex: 1;
+}
+.index_core .list .item:nth-child(odd) .img {
+  order: 0;
+  padding-right: 4%;
+}
+.index_core .list .item:nth-child(even) .img {
+  order: 1;
+  padding-left: 4%;
+}
+.index_core .list .item .text {
+  flex: 1;
+}
+.index_core .list .item .text .name {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.index_core .list .item .text .desc {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+.index_core .list .item .text .btn {
+  padding: 0;
+}
+.index_core .list .item .text .btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 48px;
+  border: 1px solid #128ac9;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.index_core .list .item .text .btn a:hover {
+  background-color: #128ac9;
+  color: #fff;
+}
+
+/* 服務項目 */
+.index_service {
+  padding: 48px 0 96px 0;
+  background-image: url(../images/index/core_bg.png);
+  background-size: cover;
+}
+.index_service .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.index_service .title .cname {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.index_service .title .cname:after {
+  content: '';
+  display: block;
+  width: 166px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #128ac9;
+}
+.index_service .title .ename {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.index_service .desc{
+  font-size: 1.7rem;
+  margin-bottom: 70px;
+}
+.index_service .silder .item a {
+  display: block;
+}
+.index_service .silder .item a:hover {
+  opacity: .8;
+}
+.index_service .silder .item a .img {
+  padding-bottom: 100%;
+  position: relative;
+  border: 1px solid #707070;
+}
+.index_service .silder .item a .img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+}
+.index_service .silder .item a .img .name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.index_service .silder .item a .img .name span {
+  max-width: 150px;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+}
