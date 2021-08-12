@@ -1,0 +1,44 @@
+@import url(./common.css);
+
+.page{
+  padding: 80px 0 100px 0;
+}
+
+.inner_page{
+  max-width: 976px;
+  margin: 0 auto;
+}
+.inner_page .title{
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #B28146;
+  margin-bottom: 60px;
+}
+.inner_page .desc{
+  font-size: 1.75rem;
+  margin-bottom: 80px;
+}
+.inner_page .desc p{
+  margin-bottom: 37px;
+}
+.inner_page .desc p:last-child{
+  margin-bottom: 0;
+}
+.inner_page .image{
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .page{
+    padding: 20px 0 60px 0;
+  }
+  .inner_page .title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .inner_page .desc{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
