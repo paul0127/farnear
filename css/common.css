@@ -11,6 +11,9 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
 }
+img {
+  max-width: 100%;
+}
 
 header {
   border-top: 15px solid #128ac9;
@@ -341,24 +344,19 @@ ul.bread li a {
 /*編輯區*/
 .editor {
   padding-top: 25px;
-  font-size: 1.25rem;
-  margin-bottom: 80px;
-}
-.editor .text_center {
-  text-align: center;
-}
-img {
-  max-width: 100%;
-}
-.about_desc h2 {
-  text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 80px;
+  color: #333333;
+}
+.editor p {
   margin-bottom: 30px;
 }
-.about_desc p {
-  font-size: 1.25rem;
-  margin-bottom: 88px;
-  line-height: 2;
+.editor ul {
+  list-style: disc;
+  padding-left: 24px;
+}
+.editor ul li {
+  margin-bottom: 30px;
 }
 
 /*分頁*/
@@ -428,26 +426,6 @@ img {
   }
 }
 
-/*回上一頁*/
-.go_back {
-  display: flex;
-  justify-content: center;
-}
-.go_back a {
-  background-color: #0c64eb;
-  color: #fff;
-  font-size: 1.5rem;
-  width: 220px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.go_back a:hover {
-  opacity: 0.8;
-}
-
 /*上下頁*/
 .pager_list {
   display: flex;
@@ -459,8 +437,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #0c64eb;
-  background-color: #0c64eb;
+  border: 1px solid #333333;
+  background-color: #333333;
   color: #fff;
   margin-right: 30px;
   text-decoration: none;
@@ -474,12 +452,12 @@ img {
 .pager_list a.prev,
 .pager_list a.next {
   background-color: #fff;
-  color: #0c64eb;
+  color: #333333;
 }
 .pager_list a.prev.disabled,
 .pager_list a.next.disabled {
-  border-color: #717171;
-  color: #717171;
+  border-color: #333333;
+  color: #333333;
   cursor: default;
 }
 .pager_list a.prev.disabled:hover,
