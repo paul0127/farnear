@@ -1,0 +1,33 @@
+@import url(./common.css);
+
+.dm_page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.dm_page .item {
+  flex: 0 0 25%;
+  padding: 0 15px;
+  margin-bottom: 55px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dm_page .item:hover {
+  opacity: 0.8;
+}
+.dm_page .item .img {
+  margin-bottom: 10px;
+}
+.dm_page .item .img img {
+  width: 100%;
+}
+.dm_page .item .name {
+  font-size: 1.25rem;
+  padding: 0 10px;
+}
+@media (max-width: 1200px) {
+  .dm_page .item {
+    flex: 0 0 50%;
+  }
+}

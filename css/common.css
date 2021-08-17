@@ -284,16 +284,16 @@ header .head .menu .search_bar form button {
   .top_banner {
     height: 200px;
   }
-  .top_banner .text .inner_text .name{
+  .top_banner .text .inner_text .name {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-  .top_banner .text .inner_text .name:after{
+  .top_banner .text .inner_text .name:after {
     margin-top: 10px;
     width: 300px;
     border-width: 3px;
   }
-  .top_banner .text .inner_text .sub_name{
+  .top_banner .text .inner_text .sub_name {
     font-size: 1.5rem;
   }
 }
@@ -328,8 +328,14 @@ ul.bread li a {
 
 /*內頁框架*/
 .page {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   padding-bottom: 30px;
+  padding: 80px 0 100px 0;
+}
+@media (max-width: 1200px) {
+  .page {
+    padding: 20px 0 60px 0;
+  }
 }
 
 /*編輯區*/
@@ -357,6 +363,8 @@ img {
 
 /*分頁*/
 .pager {
+  margin-top: 120px;
+  flex: 0 0 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -365,27 +373,27 @@ img {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  color: #0c64eb;
+  color: #333333;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid #0c64eb;
+  border: 1px solid #333333;
   border-right: none;
   font-size: 1.25rem;
 }
 .pager a:last-child {
-  border-right: 1px solid #0c64eb;
+  border-right: 1px solid #333333;
 }
 .pager a.active {
-  background-color: #0c64eb;
+  background-color: #333333;
   color: #fff;
 }
 .pager a:last-child {
   margin-right: 0;
 }
 .pager a:hover {
-  background-color: #0c64eb;
+  background-color: #333333;
   color: #fff;
 }
 .pager .prev,
@@ -403,6 +411,21 @@ img {
 }
 .pager .next::before {
   content: '>>';
+}
+@media (max-width: 1200px) {
+  .pager {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .pager a {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+  .pager .prev,
+  .pager .next {
+    width: 50px;
+  }
 }
 
 /*回上一頁*/
