@@ -66,6 +66,42 @@
   text-align: center;
   margin-bottom: 80px;
 }
+.inner_page .section .image_list {
+  display: flex;
+}
+.inner_page .section .image_list .item {
+  margin-right: 50px;
+}
+.inner_page .section .image_list .item:last-child {
+  margin-right: 0;
+}
+
+.inner_page .section ul.text_list {
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: 15px;
+}
+.inner_page .section ul.text_list > li {
+  margin-right: 20px;
+}
+.inner_page .section ul.text_list > li:last-child {
+  margin-right: 0;
+}
+.inner_page .section ul.text_list > li > .name {
+  margin-bottom: 20px;
+}
+.inner_page .section ul.text_list > li > .name::before {
+  content: url(../images/trials/trials_icon.svg);
+  margin-right: 15px;
+}
+.inner_page .section ul.text_list > li > ul {
+  padding-left: 50px;
+  list-style: disc;
+}
+.inner_page .section ul.text_list > li > ul > li {
+  margin-bottom: 20px;
+}
+
 .inner_page .table {
   display: block;
   margin: 0 auto;
