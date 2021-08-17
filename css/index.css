@@ -234,15 +234,53 @@
   font-size: 1.5rem;
   padding-top: 10px;
 }
-.index_service .desc{
+.index_service .desc {
   font-size: 1.7rem;
   margin-bottom: 70px;
+}
+.index_service .silder {
+  position: relative;
+}
+.index_service .silder .owl-stage-outer{
+  z-index: 2;
+}
+.index_service .silder .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.index_service .silder .owl-nav .owl-prev,
+.index_service .silder .owl-nav .owl-next {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 100%;
+  border: 1px solid #707070;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index_service .silder .owl-nav .owl-prev {
+  transform: translateX(calc(-100% - 20px));
+}
+.index_service .silder .owl-nav .owl-next {
+  transform: translateX(calc(100% + 20px));
+}
+.index_service .silder .owl-nav .owl-prev span,
+.index_service .silder .owl-nav .owl-next span {
+  margin-bottom: 10px;
 }
 .index_service .silder .item a {
   display: block;
 }
 .index_service .silder .item a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 .index_service .silder .item a .img {
   padding-bottom: 100%;
@@ -279,131 +317,134 @@
 }
 @media (max-width: 1200px) {
   /* 關於我們 */
-  .index_about{
+  .index_about {
     padding: 20px 0;
   }
-  .index_about .title{
+  .index_about .title {
     margin-bottom: 20px;
   }
-  .index_about .title .cname{
+  .index_about .title .cname {
     font-size: 1.5rem;
   }
-  .index_about .title .cname:after{
+  .index_about .title .cname:after {
     margin-top: 5px;
     width: 120px;
   }
-  .index_about .title .ename{
+  .index_about .title .ename {
     font-size: 1.25rem;
   }
-  .index_about .desc{
+  .index_about .desc {
     font-size: 1.25rem;
     margin-bottom: 20px;
   }
-  .index_about .btn a{
+  .index_about .btn a {
     width: 200px;
     height: 50px;
     font-size: 1.5rem;
   }
   /* 平台 */
-  .index_plat .con{
+  .index_plat .con {
     padding: 20px 0;
   }
-  .index_plat .con .title{
+  .index_plat .con .title {
     margin-bottom: 20px;
   }
-  .index_plat .con .title .cname{
+  .index_plat .con .title .cname {
     font-size: 1.5rem;
   }
-  .index_plat .con .title .cname:after{
+  .index_plat .con .title .cname:after {
     margin-top: 5px;
     width: 120px;
   }
-  .index_plat .con .title .ename{
+  .index_plat .con .title .ename {
     font-size: 1.25rem;
   }
-  .index_plat .con .desc{
+  .index_plat .con .desc {
     font-size: 1.25rem;
     margin-bottom: 20px;
   }
-  .index_plat .con .image{
+  .index_plat .con .image {
     margin-bottom: 40px;
   }
-  .index_plat .con .btn a{
+  .index_plat .con .btn a {
     width: 200px;
     height: 50px;
     font-size: 1.5rem;
   }
   /* 核心能量 */
-  .index_core{
+  .index_core {
     padding: 20px 0;
   }
-  .index_core .title{
+  .index_core .title {
     margin-bottom: 20px;
   }
-  .index_core .title .cname{
+  .index_core .title .cname {
     font-size: 1.5rem;
   }
-  .index_core .title .cname:after{
+  .index_core .title .cname:after {
     margin-top: 5px;
     width: 120px;
   }
-  .index_core .title .ename{
+  .index_core .title .ename {
     font-size: 1.25rem;
   }
-  .index_core .list .item{
+  .index_core .list .item {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
-  .index_core .list .item .img{
+  .index_core .list .item .img {
     flex: 0 0 100%;
     margin-bottom: 20px;
   }
-  .index_core .list .item:nth-child(odd) .img{
+  .index_core .list .item:nth-child(odd) .img {
     order: 0;
     padding-right: 0;
   }
-  .index_core .list .item:nth-child(even) .img{
+  .index_core .list .item:nth-child(even) .img {
     order: 0;
     padding-left: 0;
   }
-  .index_core .list .item .img img{
+  .index_core .list .item .img img {
     width: 100%;
   }
-  .index_core .list .item .text .name{
+  .index_core .list .item .text .name {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
-  .index_core .list .item .text .desc{
+  .index_core .list .item .text .desc {
     font-size: 1.25rem;
   }
-  .index_core .list .item .text .btn{
+  .index_core .list .item .text .btn {
     width: 100%;
   }
-  .index_core .list .item .text .btn a{
+  .index_core .list .item .text .btn a {
     width: 100%;
   }
   /* 服務項目 */
-  .index_service{
+  .index_service {
     padding: 20px 0;
   }
-  .index_service .title{
+  .index_service .title {
     margin-bottom: 20px;
   }
-  .index_service .title .cname{
+  .index_service .title .cname {
     font-size: 1.5rem;
   }
-  .index_service .title .cname:after{
+  .index_service .title .cname:after {
     margin-top: 5px;
     width: 120px;
   }
-  .index_service .title .ename{
+  .index_service .title .ename {
     font-size: 1.25rem;
   }
-  .index_service .desc{
+  .index_service .desc {
     font-size: 1.25rem;
     margin-bottom: 40px;
   }
-  .index_service .silder{
+  .index_service .silder {
     position: relative;
+  }
+  .index_service .silder .owl-nav {
+    display: none;
   }
 }

@@ -358,6 +358,17 @@ ul.bread li a {
 .editor ul li {
   margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+  .editor {
+    font-size: 1.25rem;
+  }
+  .editor p {
+    margin-bottom: 20px;
+  }
+  .editor ul li {
+    margin-bottom: 20px;
+  }
+}
 
 /*分頁*/
 .pager {

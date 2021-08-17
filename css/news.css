@@ -58,11 +58,11 @@
   font-size: 1.25rem;
   color: #777777;
   font-weight: 600;
-  height: 150px;
+  height: 90px;
   word-break: break-all;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 
@@ -96,6 +96,29 @@
   .news .list .item {
     width: 100%;
     padding: 0 15px;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
+    margin-top: 0 !important;
+  }
+  .news .list .item .img {
+    margin-bottom: 10px;
+  }
+  .news .list .item .name {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  .news .list .item .desc{
+    font-size: 1rem;
+    height: 72px;
+  }
+
+  .news .info .banner {
+    margin-bottom: 30px;
+  }
+  .news .info .title{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .news .info .date{
+    font-size: 1rem;
   }
 }
