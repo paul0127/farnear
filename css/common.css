@@ -65,7 +65,7 @@ header .head .menu ul.nav > li > .sub_menu {
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 150%;
+  width: 170%;
   transform: scaleY(0) translateX(-50%);
   transform-origin: top;
   transition-duration: 0.3s;
