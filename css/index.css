@@ -241,7 +241,7 @@
 .index_service .silder {
   position: relative;
 }
-.index_service .silder .owl-stage-outer{
+.index_service .silder .owl-stage-outer {
   z-index: 2;
 }
 .index_service .silder .owl-nav {
@@ -265,6 +265,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.index_service .silder .owl-nav .owl-prev:hover,
+.index_service .silder .owl-nav .owl-next:hover {
+  opacity: 0.8;
 }
 .index_service .silder .owl-nav .owl-prev {
   transform: translateX(calc(-100% - 20px));
