@@ -23,6 +23,11 @@
   color: #b28146;
   margin-bottom: 60px;
 }
+.inner_page .section .sub_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
 .inner_page .section .desc {
   font-size: 1.75rem;
   margin-bottom: 80px;
@@ -108,6 +113,9 @@
   .inner_page .section .title {
     font-size: 1.5rem;
     margin-bottom: 30px;
+  }
+  .inner_page .section .sub_title {
+    font-size: 1.25rem;
   }
   .inner_page .section .desc {
     font-size: 1.25rem;
@@ -222,7 +230,7 @@
 .inner_page .table {
   display: block;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .inner_page .table .table_title {
   color: #b28146;
@@ -265,6 +273,13 @@
 }
 
 @media (max-width: 1200px) {
+  .inner_page .table{
+    margin-bottom: 30px;
+  }
+  .inner_page .table .table_title{
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
 }
 
 .contact .info {
