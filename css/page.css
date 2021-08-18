@@ -218,8 +218,14 @@
     max-width: unset;
     margin-bottom: 30px;
   }
+  .inner_page .table_list .item .name {
+    border-left: 2px solid #b28146;
+  }
   .inner_page .table_list .item:first-child .name {
     border-right: 2px solid #b28146;
+  }
+  .inner_page .table_list .item .text {
+    border-left: 2px solid #b28146;
   }
   .inner_page .table_list .item:first-child .text {
     border-right: 2px solid #b28146;
