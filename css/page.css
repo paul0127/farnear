@@ -151,104 +151,120 @@
     margin-right: 0;
   }
 }
-/* 表單 */
-.inner_page .table {
-  display: block;
-  margin: 0 auto;
-}
-.inner_page .table .thead {
+.inner_page .table_list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
-.inner_page .table .thead .th {
+.inner_page .table_list .item {
   max-width: 380px;
   flex: 1;
-  font-size: 1.25rem;
+}
+.inner_page .table_list .item .name {
   height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #b28146;
   border-left: none;
+  font-size: 1.25rem;
 }
-.inner_page .table .thead .th:first-child {
+.inner_page .table_list .item:first-child .name {
   border-left: 2px solid #b28146;
 }
-.inner_page .table .thead .th:nth-child(1) {
+.inner_page .table_list .item:nth-child(1) .name {
   background-color: #ffe6c0;
 }
-.inner_page .table .thead .th:nth-child(2) {
+.inner_page .table_list .item:nth-child(2) .name {
   background-color: #ccd9ff;
 }
-.inner_page .table .thead .th:nth-child(3) {
+.inner_page .table_list .item:nth-child(3) .name {
   background-color: #04ff6829;
 }
-.inner_page .table .tbody .tr {
-  display: flex;
-  justify-content: center;
-}
-.inner_page .table .tbody .tr .td {
-  max-width: 380px;
-  flex: 1;
-  padding: 25px 10px;
+.inner_page .table_list .item .text {
   border: 2px solid #b28146;
-  border-top: none;
   border-left: none;
+  border-top: none;
+  height: calc(100% - 130px);
+  padding: 25px 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.inner_page .table .tbody .tr .td:first-child {
+.inner_page .table_list .item:first-child .text {
   border-left: 2px solid #b28146;
 }
-.inner_page .table .tbody .tr .td ul {
+.inner_page .table_list .item .text ul {
   list-style: disc;
   padding-left: 24px;
   font-size: 1.25rem;
 }
-.inner_page .table .tbody .tr .td ul li {
+.inner_page .table_list .item .text ul li {
   margin-bottom: 20px;
 }
-.inner_page .table .tbody .tr .td ul li:last-child {
-  margin-bottom: 0;
-}
 @media (max-width: 1200px) {
-  .inner_page .table .thead {
-    display: none;
-  }
-  .inner_page .table .tbody .tr {
+  .inner_page .table_list {
     flex-wrap: wrap;
   }
-  .inner_page .table .tbody .tr .td {
-    max-width: unset;
+  .inner_page .table_list .item {
     flex: 0 0 100%;
-    border: 2px solid #b28146;
+    max-width: unset;
     margin-bottom: 30px;
-    padding-top: 0;
   }
-  .inner_page .table .tbody .tr .td::before {
-    content: attr(data-title);
-    font-size: 1.25rem;
-    margin: 0 -10px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid #b28146;
-    padding: 15px 0;
+  .inner_page .table_list .item:first-child .name {
+    border-right: 2px solid #b28146;
   }
-  .inner_page .table .tbody .tr .td:nth-child(1)::before {
-    background-color: #ffe6c0;
+  .inner_page .table_list .item:first-child .text {
+    border-right: 2px solid #b28146;
   }
-  .inner_page .table .tbody .tr .td:nth-child(2)::before {
-    background-color: #ccd9ff;
-  }
-  .inner_page .table .tbody .tr .td:nth-child(3)::before {
-    background-color: #04ff6829;
-  }
-  .inner_page .table .tbody .tr .td:last-child {
-    margin-bottom: 0;
-  }
+}
+
+/* 表單 */
+.inner_page .table {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.inner_page .table .table_title {
+  color: #b28146;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.inner_page .table .thead {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.inner_page .table .thead .th {
+  flex: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #e2e7f7;
+}
+.inner_page .table .thead .th:nth-child(2) {
+  flex: 0 0 120px;
+}
+.inner_page .table .tbody .tr {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.inner_page .table .tbody .tr:nth-child(even) {
+  background-color: #eee;
+}
+.inner_page .table .tbody .tr .td {
+  flex: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+.inner_page .table .tbody .tr .td:nth-child(2) {
+  flex: 0 0 120px;
+}
+.inner_page .table .tbody .tr .td a {
+  color: #333;
+}
+
+@media (max-width: 1200px) {
 }
 
 .contact .info {
