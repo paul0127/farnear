@@ -370,6 +370,331 @@ ul.bread li a {
   }
 }
 
+/* 編輯文字及列表 */
+.edeitor_desc {
+  font-size: 1.75rem;
+  margin-bottom: 80px;
+}
+.edeitor_desc p {
+  margin-bottom: 37px;
+}
+.edeitor_desc p:last-child {
+  margin-bottom: 0;
+}
+.edeitor_desc > ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+.edeitor_desc > ul > li {
+  margin-bottom: 20px;
+}
+.edeitor_desc > ul > li:last-child {
+  margin-bottom: 0;
+}
+.edeitor_desc > ul > li > .sub {
+  display: flex;
+}
+.edeitor_desc > ul > li > .sub > ol {
+  list-style: decimal-leading-zero;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+.edeitor_desc > ul > li > .sub > ol:last-child {
+  margin-right: 0;
+}
+.edeitor_desc > ul > li > .sub > ol > li {
+  margin-bottom: 16px;
+}
+
+ul.text_list {
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: 15px;
+  margin-bottom: 80px;
+}
+ul.text_list > li {
+  margin-right: 20px;
+}
+ul.text_list > li:last-child {
+  margin-right: 0;
+}
+ul.text_list > li > .name {
+  margin-bottom: 20px;
+}
+ul.text_list > li > .name::before {
+  content: url(../images/trials/trials_icon.svg);
+  margin-right: 15px;
+}
+ul.text_list > li > ul {
+  padding-left: 50px;
+  list-style: disc;
+}
+ul.text_list > li > ul > li {
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .edeitor_desc {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  .edeitor_desc p {
+    margin-bottom: 20px;
+  }
+  .edeitor_desc > ul > li > .sub {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .edeitor_desc > ul > li > .sub > ol {
+    flex: 0 0 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+
+  ul.text_list {
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    padding-left: 0;
+    margin-bottom: 30PX;
+  }
+  ul.text_list > li {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+}
+
+/* 編輯圖片 */
+.edeitor_image {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.image_list {
+  display: flex;
+  margin-bottom: 80px;
+}
+.image_list .item {
+  margin-right: 50px;
+}
+.image_list .item:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1200px) {
+  .edeitor_image {
+    margin-bottom: 30px;
+  }
+  .image_list {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .image_list .item {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .image_list .item img {
+    width: 100%;
+  }
+}
+
+/* 清單 */
+.table_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.table_list .item {
+  max-width: 380px;
+  flex: 1;
+}
+.table_list .item .name {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b28146;
+  border-left: none;
+  font-size: 1.25rem;
+}
+.table_list .item:first-child .name {
+  border-left: 2px solid #b28146;
+}
+.table_list .item:nth-child(1) .name {
+  background-color: #ffe6c0;
+}
+.table_list .item:nth-child(2) .name {
+  background-color: #ccd9ff;
+}
+.table_list .item:nth-child(3) .name {
+  background-color: #04ff6829;
+}
+.table_list .item .text {
+  border: 2px solid #b28146;
+  border-left: none;
+  border-top: none;
+  height: calc(100% - 130px);
+  padding: 25px 10px;
+  display: flex;
+  align-items: center;
+}
+.table_list .item:first-child .text {
+  border-left: 2px solid #b28146;
+}
+.table_list .item .text ul {
+  list-style: disc;
+  padding-left: 24px;
+  font-size: 1.25rem;
+}
+.table_list .item .text ul li {
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .table_list {
+    flex-wrap: wrap;
+  }
+  .table_list .item {
+    flex: 0 0 100%;
+    max-width: unset;
+    margin-bottom: 30px;
+  }
+  .table_list .item .name {
+    border-left: 2px solid #b28146;
+  }
+  .table_list .item:first-child .name {
+    border-right: 2px solid #b28146;
+  }
+  .table_list .item .text {
+    border-left: 2px solid #b28146;
+  }
+  .table_list .item:first-child .text {
+    border-right: 2px solid #b28146;
+  }
+}
+
+/* 表單 */
+.edeitor_table {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.edeitor_table .table_title {
+  color: #b28146;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.edeitor_table .thead {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.edeitor_table .thead .th {
+  flex: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #e2e7f7;
+}
+.edeitor_table .thead .th:nth-child(2) {
+  flex: 0 0 120px;
+}
+.edeitor_table .tbody .tr {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.edeitor_table .tbody .tr:nth-child(even) {
+  background-color: #eee;
+}
+.edeitor_table .tbody .tr .td {
+  flex: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+.edeitor_table .tbody .tr .td:nth-child(2) {
+  flex: 0 0 120px;
+}
+.edeitor_table .tbody .tr .td a {
+  color: #333;
+}
+
+@media (max-width: 1200px) {
+  .edeitor_table {
+    margin-bottom: 30px;
+  }
+  .edeitor_table .table_title {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+}
+
+/* 聯絡我們上方 */
+.editor_info .title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  max-width: 640px;
+}
+.editor_info .info_list {
+  display: flex;
+  margin-bottom: 120px;
+}
+.editor_info .info_list .item {
+  flex: 1;
+  text-align: center;
+  margin-right: 110px;
+}
+.editor_info .info_list .item:last-child {
+  margin-right: 0;
+}
+.editor_info .info_list .item .img {
+  margin-bottom: 20px;
+}
+.editor_info .info_list .item .desc .name {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.editor_info .info_list .item .desc .text {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .editor_info .title {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  .editor_info .info_list {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .editor_info .info_list .item {
+    flex: 0 0 100%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .editor_info .info_list .item:last-child {
+    margin-bottom: 0;
+  }
+  .editor_info .info_list .item .img {
+    margin-bottom: 0;
+    flex: 0 0 100px;
+    margin-right: 30px;
+  }
+  .editor_info .info_list .item .desc {
+    text-align: left;
+  }
+  .editor_info .info_list .item .desc .name {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+  .editor_info .info_list .item .desc .text {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+}
+
 /*分頁*/
 .pager {
   margin-top: 120px;
