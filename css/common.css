@@ -629,7 +629,7 @@ ul.text_list > li > ul > li {
 }
 
 /* 聯絡我們上方 */
-.editor_info .title {
+.editor_info .sub {
   font-size: 1.5rem;
   margin: 0 auto;
   margin-bottom: 80px;
