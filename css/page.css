@@ -72,16 +72,16 @@
 .page .form .list .input.half {
   flex: 0 0 50%;
 }
-.page .form .list .input label {
+.page .form .list .input > label {
   display: block;
   font-size: 1.25rem;
   margin-bottom: 10px;
   padding-left: 5px;
 }
-.page .form .list .input label span {
+.page .form .list .input > label span {
   color: #f90b0b;
 }
-.page .form .list .input input,
+.page .form .list .input input[type='text'],
 .page .form .list .input select,
 .page .form .list .input textarea {
   width: 100%;
@@ -94,9 +94,23 @@
 .page .form .list .input textarea {
   min-height: 200px;
 }
-.page .form .list .input input::placeholder,
+.page .form .list .input input[type='text']::placeholder,
 .page .form .list .input textarea::placeholder {
   color: #bbb;
+}
+.page .form .list .input .opt_list{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.page .form .list .input .opt_list input[type='radio'],
+.page .form .list .input .opt_list input[type='checkbox']{
+  margin-right: 10px;
+}
+.page .form .list .input .opt_list label{
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-size: 1.25rem;
 }
 .page .form .list .input .verify {
   display: flex;
