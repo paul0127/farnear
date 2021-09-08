@@ -45,47 +45,45 @@
 }
 
 /*聯絡我們 表單*/
-.contact .info {
-  max-width: 784px;
-  margin: 0 auto;
-}
-.contact .info .form {
+.page .form {
   padding: 50px 40px;
   background-color: #fff;
   border-radius: 10px;
+  max-width: 784px;
+  margin: 0 auto;
 }
-.contact .info .form .name {
+.page .form .name {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 60px;
   text-align: center;
 }
-.contact .info .form .list {
+.page .form .list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -35px;
   margin-bottom: 80px;
 }
-.contact .info .form .list .input {
+.page .form .list .input {
   flex: 0 0 100%;
   padding: 0 35px;
   margin-bottom: 30px;
 }
-.contact .info .form .list .input.half {
+.page .form .list .input.half {
   flex: 0 0 50%;
 }
-.contact .info .form .list .input label {
+.page .form .list .input label {
   display: block;
   font-size: 1.25rem;
   margin-bottom: 10px;
   padding-left: 5px;
 }
-.contact .info .form .list .input label span {
+.page .form .list .input label span {
   color: #f90b0b;
 }
-.contact .info .form .list .input input,
-.contact .info .form .list .input select,
-.contact .info .form .list .input textarea {
+.page .form .list .input input,
+.page .form .list .input select,
+.page .form .list .input textarea {
   width: 100%;
   padding: 5px 10px;
   border: 1px solid #cccccc;
@@ -93,25 +91,25 @@
   outline: none;
   color: #bbb;
 }
-.contact .info .form .list .input textarea {
+.page .form .list .input textarea {
   min-height: 200px;
 }
-.contact .info .form .list .input input::placeholder,
-.contact .info .form .list .input textarea::placeholder {
+.page .form .list .input input::placeholder,
+.page .form .list .input textarea::placeholder {
   color: #bbb;
 }
-.contact .info .form .list .input .verify {
+.page .form .list .input .verify {
   display: flex;
   align-items: center;
 }
-.contact .info .form .list .input .verify input {
+.page .form .list .input .verify input {
   flex: 0 0 205px;
   margin-right: 10px;
 }
-.contact .info .form .list .input .verify img {
+.page .form .list .input .verify img {
   margin-right: 10px;
 }
-.contact .info .form .list .input .verify button {
+.page .form .list .input .verify button {
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -119,14 +117,14 @@
   height: 30px;
   color: #aaa;
 }
-.contact .info .form .list .input .verify button:hover {
+.page .form .list .input .verify button:hover {
   opacity: 0.8;
 }
-.contact .info .form .btns {
+.page .form .btns {
   display: flex;
   justify-content: center;
 }
-.contact .info .form .btns button {
+.page .form .btns button {
   border: 1px solid #848484;
   background-color: #fff;
   width: 160px;
@@ -135,61 +133,27 @@
   border-radius: 50px;
   color: #848484;
 }
-.contact .info .form .btns button:hover {
+.page .form .btns button:hover {
   opacity: 0.8;
 }
-.contact .info .form .btns button:last-child {
+.page .form .btns button:last-child {
   margin-right: 0;
 }
-.contact .info .form .btns button.send {
+.page .form .btns button.send {
   background-color: #848484;
   color: #fff;
 }
 @media (max-width: 1200px) {
-  .contact .info .title {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-  }
-  .contact .info .info_list {
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  .contact .info .info_list .item {
-    flex: 0 0 100%;
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .contact .info .info_list .item:last-child {
-    margin-bottom: 0;
-  }
-  .contact .info .info_list .item .img {
-    margin-bottom: 0;
-    flex: 0 0 100px;
-    margin-right: 30px;
-  }
-  .contact .info .info_list .item .desc {
-    text-align: left;
-  }
-  .contact .info .info_list .item .desc .name {
-    margin-bottom: 0;
-    font-size: 1.25rem;
-  }
-  .contact .info .info_list .item .desc .text {
-    margin-bottom: 0;
-    font-size: 1.25rem;
-  }
-  .contact .info .form {
+  .page .form {
     padding: 30px 20px;
   }
-  .contact .info .form .name {
+  .page .form .name {
     margin-bottom: 30px;
   }
-  .contact .info .form .list {
+  .page .form .list {
     margin-bottom: 40px;
   }
-  .contact .info .form .list .input.half {
+  .page .form .list .input.half {
     flex: 0 0 100%;
   }
 }

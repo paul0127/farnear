@@ -634,6 +634,7 @@ ul.text_list > li > ul > li {
   margin: 0 auto;
   margin-bottom: 80px;
   max-width: 640px;
+  text-align: center;
 }
 .editor_info .info_list {
   display: flex;
